@@ -1,3 +1,4 @@
+// about buttons
 const aboutBtn = document.querySelectorAll('.about-btn');
 
 aboutBtn.forEach((btn, index) => {
@@ -21,10 +22,7 @@ const sections = document.querySelectorAll('section');
 const menuIcon = document.querySelector('#menu-icon');
 const navBar = document.querySelector('.nav-container .link-container');
 
-// menuIcon.addEventListener('click', () => {
-//     menuIcon.classList.toggle('bx-x');
-//     navBar.classList.toggle('active');
-// });
+//nav links
 
 navlinks.forEach((link, index) => {
     link.addEventListener('click', (e) => {
@@ -44,7 +42,7 @@ navlinks.forEach((link, index) => {
 });
 
 
-
+//btn
 
 document.getElementById("contId").addEventListener("click", function () {
     const link = document.createElement("a");
@@ -54,7 +52,7 @@ document.getElementById("contId").addEventListener("click", function () {
 
 })
 
-
+// scroll
 const scrollNav = document.querySelectorAll("section");
   const navLinks = document.querySelectorAll(".link-container a");
 
@@ -77,4 +75,31 @@ const scrollNav = document.querySelectorAll("section");
     });
   });
 
+  //toaster
+toastr.options = {
+    "timeOut": 3000,
+    positionClass: "toast-top-center",
+    progressBar: true,
+    closeButton: true
+};
+//function
+
+function displaySuccess() {
+    var f = $('#fnTxt').val().trim();
+    var email = $('#emailTxt').val().trim();
+    var num = $('#numTxt').val().trim();
+    var sub = $('#subTxt').val().trim();
+    var message = $('#areaTxt').val().trim();
+
+    if (f && email && num && sub && message) {
+        
+        toastr.success("Your message has been sent successfully!");
+
+        $('#fnTxt').val('');
+        $('#emailTxt').val('');
+        $('#numTxt').val('');
+        $('#subTxt').val('');
+        $('#areaTxt').val('');
+    }
+}
 

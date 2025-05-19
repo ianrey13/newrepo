@@ -3,10 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--DEVICON-->
+    <!--toaster-->
     
-    <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
-          
+    <link rel="stylesheet" href="assets/css/toastr.min.css">
     <!--BOOTSTAP -->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="assets/css/icons.css">
@@ -31,6 +30,7 @@
 
     </div>
 </div>
+<!-- home section -->
 <section id="home">
     <div class="home-detail">
         <h1>Ian Rey Ubaub</h1>
@@ -152,6 +152,7 @@
         </div>
     </div>
 </section>
+<!-- skill section -->
 <section id="skills" class="py-5">
     <h2 class="heading">My <span>Skills</span></h2>
     <div class="skills-container">
@@ -283,7 +284,7 @@
                     <input type="email" placeholder="Email Address" required id="emailTxt">
                     <input type="text" placeholder="Phone Number" required id="numTxt">
                     <input type="text" placeholder="Email Subject" required id="subTxt">
-                    <textarea name="" id="txtArea" placeholder="Your Message" required></textarea>
+                    <textarea name="" id="areaTxt" placeholder="Your Message" required></textarea>
                 </div>
                 <button type="submit" class="btn" onclick="displaySuccess()">Send Message</button>
             </form>
@@ -291,7 +292,7 @@
     </div>
 </section>
 <!-- modal bootsrap -->
- <!-- freeCodeCamp Cert -->
+ <!-- freeCodeCamp Cert modal -->
     <div class="modal fade" id="fccModal" tabindex="-1" aria-labelledby="imgModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered modal-lg">
         <div class="modal-content bg-dark text-white">
@@ -332,6 +333,7 @@
 <footer>
     <script src="assets/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/toastr.min.js"></script>
     <script src="assets/js/script.js"></script>
 </footer>
 
